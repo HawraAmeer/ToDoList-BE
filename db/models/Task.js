@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       defaultValue: "middle",
     },
-    deadline: { type: DataTypes.DATE, allowNull: false },
+    deadline: { type: DataTypes.DATE },
   });
 
   SequelizeSlugify.slugifyModel(Task, {
