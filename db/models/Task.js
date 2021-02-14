@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     deadline: { type: DataTypes.DATE, allowNull: false },
   });
 
-  SequelizeSlugify.slugifyModel(Donut, {
+  SequelizeSlugify.slugifyModel(Task, {
     source: ["name"],
   });
 
